@@ -1,6 +1,11 @@
 from django.urls import path
+from rest_framework import routers
 
 from . import views
+#from .viewsets import ClienteViewSet
+
+#router = routers.SimpleRouter()
+#router.register('cliente', ClienteViewSet)
 
 urlpatterns = [
     path("", views.index,name="index"),
@@ -11,3 +16,4 @@ urlpatterns = [
     path("single/", views.about, name="single"),
     path("about/", views.about, name="about"),
 ]
+
